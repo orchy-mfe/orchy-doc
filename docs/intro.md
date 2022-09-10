@@ -2,46 +2,24 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Introduction
 
-Let's discover **Docusaurus in less than 5 minutes**.
+`orchy` is an open source [Web Component](https://developer.mozilla.org/en-US/docs/Web/Web_Components) that aims to orchestrate multiple multi-tenant frontend applications leveraging on the following technologies:
 
-## Getting Started
+- [Micro Frontends](https://micro-frontends.org/) pattern;
+- [JavaScript modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules);
+- [Server Driven UI](https://www.judo.app/blog/server-driven-ui/).
 
-Get started by **creating a new site**.
+Each UI and each Micro Frontend is managed using the Client Side Composition variant of the Micro Frontend pattern.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+Thanks to the out of the box support to Server Driven UI, `orchy` also supports both **horizontal** and **vertical** split of the view.
 
-### What you'll need
+## Project details
 
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+All the repositories of the `orchy` project are open sourced under the [MIT](https://opensource.org/licenses/MIT) license and they are available in the [orchy-mfe GitHub organization](https://github.com/orchy-mfe).
 
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+The [`orchy-core`](https://github.com/orchy-mfe/orchy-core) repository is the main one, and is a monorepo which includes the following packages:
+- `@orchy-mfe/be`: a [Fastify](https://www.fastify.io/) backend that can be used to serve `orchy`'s configuration files;
+- `@orchy-mfe/models`: includes the TypeScript models for the `orchy`'s configurations and the Micro Frontends properties;
+- `@orchy-mfe/page-builder`: the library which enables the Server Driven UI;
+- `@orchy-mfe/web-component`: the Web Component which embeds the orchestration logics.
