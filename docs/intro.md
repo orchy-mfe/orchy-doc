@@ -23,3 +23,7 @@ The [`orchy-core`](https://github.com/orchy-mfe/orchy-core) repository is the ma
 - `@orchy-mfe/models`: includes the TypeScript models for the `orchy`'s configurations and the Micro Frontends properties;
 - `@orchy-mfe/page-builder`: the library which enables the Server Driven UI;
 - `@orchy-mfe/web-component`: the Web Component which embeds the orchestration logics.
+
+Same as Web Components are **technology-agnostic** by definition, so is `orchy`: it means that it integrates with low effort with your current Single Page Application, being it React, Preact, Vue, Svelte or anything else you like...even Vanilla JavaScript!
+
+Are you going to create a new Micro Frontend? Take a look to the [templates section](./templates.md)
