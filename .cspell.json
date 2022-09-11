@@ -1,0 +1,30 @@
+{
+    "version": "0.2",
+    "gitignoreRoot": ".",
+    "useGitignore": true,
+    "dictionaries": [
+      "css",
+      "html",
+      "fonts",
+      "typescript",
+      "softwareTerms",
+      "companies",
+      "lorem-ipsum",
+      "project-words",
+      "node",
+      "npm"
+    ],
+    "dictionaryDefinitions": [
+      {
+        "name": "project-words",
+        "path": "./project-words.txt",
+        "noSuggest": true
+      }
+    ],
+    "ignorePaths": [
+      "package.json",
+      "pnpn-lock.yaml",
+      "project-words.txt",
+    ],
+    "ignoreRegExpList": ["Email", "Urls", "#[\\w-]*"]
+  }

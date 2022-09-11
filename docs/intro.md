@@ -28,4 +28,4 @@ The [`orchy-core`](https://github.com/orchy-mfe/orchy-core) repository is the ma
 
 Same as Web Components are **technology-agnostic** by definition, so is `orchy`: it means that it integrates with low effort with your current Single Page Application, being it React, Preact, Vue, Svelte or anything else you like...even Vanilla JavaScript!
 
-Are you going to create a new Micro Frontend? Take a look to the [templates section](./templates.md)
+Are you going to create a new Micro Frontend? Take a look to the [templates section](./templates.md).
