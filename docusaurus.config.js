@@ -5,8 +5,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Orchy',
-  tagline: 'Dinosaurs are cool',
+  title: 'Orchy Project',
+  tagline: 'The Micro Frontends orchestrator',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
