@@ -4,7 +4,9 @@ sidebar_position: 1
 
 # Introduction
 
-`orchy` is an open source [Web Component](https://developer.mozilla.org/en-US/docs/Web/Web_Components) that aims to orchestrate multiple multi-tenant frontend applications leveraging on the following technologies:
+The `Orchy Project` consists in a bunch of utilities and templates that can help you to easily implement the [Micro Frontends](https://micro-frontends.org/) pattern in a performant way.
+
+All of this is possible thanks to an open source [Web Component](https://developer.mozilla.org/en-US/docs/Web/Web_Components) which aims to orchestrate multiple multi-tenant frontend applications leveraging on the following technologies:
 
 - [Micro Frontends](https://micro-frontends.org/) pattern;
 - [JavaScript modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules);
@@ -16,7 +18,7 @@ Thanks to the out of the box support to Server Driven UI, `orchy` also supports 
 
 ## Project details
 
-All the repositories of the `orchy` project are open sourced under the [MIT](https://opensource.org/licenses/MIT) license and they are available in the [orchy-mfe GitHub organization](https://github.com/orchy-mfe).
+All the repositories of the `Orchy Project` are open sourced under the [MIT](https://opensource.org/licenses/MIT) license and they are available in the [orchy-mfe GitHub organization](https://github.com/orchy-mfe).
 
 The [`orchy-core`](https://github.com/orchy-mfe/orchy-core) repository is the main one, and is a monorepo which includes the following packages:
 - `@orchy-mfe/be`: a [Fastify](https://www.fastify.io/) backend that can be used to serve `orchy`'s configuration files;
