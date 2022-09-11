@@ -62,3 +62,9 @@ Here an exhaustive list of all the available templates grouped per variant.
         </td>
     </tr>
 </table>
+
+## Interactive template download
+
+Would you like to scaffold a new Micro Frontend, without leaving the CLI?
+
+The tool `create-orchy-mfe` is what you need!
