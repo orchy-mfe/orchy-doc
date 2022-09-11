@@ -68,3 +68,25 @@ Here an exhaustive list of all the available templates grouped per variant.
 Would you like to scaffold a new Micro Frontend, without leaving the CLI?
 
 The tool `create-orchy-mfe` is what you need!
+
+### Usage
+
+There are multiple ways to run it, e.g.:
+- installing it, using the command
+```bash 
+npm install -g create-orchy-mfe
+```
+- using `npx`, with the command 
+```bash
+npx create-orchy-mfe
+```
+- using `npm`, with the command
+```bash 
+npm create orchy-mfe
+```
+
+The following video is an example of what you can get with `create-orchy-mfe` installed and running.
+
+<video controls>
+    <source src="/create-orchy-mfe.mp4"></source>
+</video>
