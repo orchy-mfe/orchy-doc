@@ -6,10 +6,9 @@ sidebar_position: 3
 
 ## Are you going to create a new Micro Frontend?
 
-The `Orchy Project` provides different templates which works out-of-the-box with the orchestrator:
-the only thing that you have to do is choose your preferred one, clone it and start editing!
+The `Orchy Project` provides different templates which works out-of-the-box with the orchestrator: you only have to choose your preferred one, clone it and start editing!
 
-Here an exhaustive list of all the available templates grouped per variant.
+Here an exhaustive list of all the available templates grouped by type.
 
 <table>
     <tr>
