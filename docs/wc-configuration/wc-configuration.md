@@ -16,6 +16,7 @@ Here is a full example of configuration that we will explore in the next pages.
       "applications": [
         {
           "entryPoint": "//localhost:3000",
+          "container": "#toor",
           "id": "microfrontend-test-1",
           "properties": {
             "mfName": "Name test"
