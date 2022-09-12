@@ -54,7 +54,7 @@ If you decide to expose your Micro Frontends, be awere of [Cross Origin Resource
 `properties` field object contains the additional properties that will be injected at Micro Frontend bootstrap mount.
 
 
-# micropages configuration example
+# microPages configuration example
 
 Here is a full example of the `microPages` field configuration.
 
