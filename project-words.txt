@@ -1,4 +1,3 @@
 orchy
 Frontends
-Fastify
 Preact

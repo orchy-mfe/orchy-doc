@@ -31,5 +31,5 @@ Same as Web Components are **technology-agnostic** by definition, so is `orchy`:
 The only thing that you need is to understand how to configure it. We are going deep in the configuration structure in the [next section](./wc-configuration/wc-configuration.md).
 
 :::info
-Are you going to create a new Micro Frontend? Take a look to the [templates section](./templates/templates.md).
+Are you going to create a new Micro Frontend? Take a look to the [templates section](../templates/templates.md).
 :::
