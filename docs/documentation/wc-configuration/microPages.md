@@ -6,7 +6,7 @@ sidebar_position: 4
 
 This field is an object which allows you to compose your page, and your Micro Frontends, grouping them by the exposition path.
 
-So, in this object, the key represents the path that `orchy` will handle to expose your desider Micro Frontends.
+So, in this object, the key represents the path that `orchy` will handle to expose your desired Micro Frontends.
 
 ## microPages.pageConfiguration
 
@@ -42,7 +42,7 @@ It is **mandatory** only if multiple Micro Frontends are defined, otherwise is o
 `entryPoint` field defines where is exposed the `index.html` of you Micro Frontend; it can be defined with both a relative or absolute path and even with a different domain.
 
 :::danger
-If you decide to expose your Micro Frontends, be awere of [Cross Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS).
+If you decide to expose your Micro Frontends, be aware of [Cross Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS).
 :::
 
 ### microPages.microFrontends.id
@@ -78,4 +78,4 @@ Here is a full example of the `microPages` field configuration.
 
 In plain english, it means that: when we will navigate to the `/route/load` path, the `page-config` configuration will be used to compose your page.
 
-Additionally, will be fetched one Micro Frontned from `localhost:3000`, with `microfrontend-test-1` as `id`. Once fetched, it will be mounted in a container with `id=toor` and then will be injected the `mfName` property.
+Additionally, will be fetched one Micro Frontend from `localhost:3000`, with `microfrontend-test-1` as `id`. Once fetched, it will be mounted in a container with `id=toor` and then will be injected the `mfName` property.

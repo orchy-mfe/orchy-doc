@@ -65,6 +65,12 @@ const config = {
           },
           {
             type: 'doc',
+            docId: 'templates/templates',
+            position: 'left',
+            label: 'Templates',
+          },
+          {
+            type: 'doc',
             docId: 'tutorials/tutorials/tutorials',
             position: 'left',
             label: 'Tutorials',

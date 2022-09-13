@@ -17,7 +17,7 @@ import '@orchy-mfe/wc'
 
 ## Attributes
 
-To configure its behaviour, the Web Component exposes two attributes:
+To configure its behavior, the Web Component exposes two attributes:
 - `basePath`: the base path that will be used by the internal router to handle the Micro Frontends loading.  
   Its default value is the value of `window.location.pathname` when it is inserted in the page;
 - `configurationName`: the name of the configuration that will be fetched to orchestrate your pages and your Micro Frontends.  
