@@ -10,7 +10,7 @@ In this tutorial we will see how to configure a template to use them, and which 
 
 ## Template preparation
 
-Let's apply them to a fresh React template!
+Let's start with a fresh React template!
 
 Firstly, scaffold it using the `create-orchy-mfe` tool:
 
@@ -22,12 +22,12 @@ npx create-orchy-mfe -t react -d ./ -T=false -n orchy-react
 Although the command above you will scaffold a **JavaScript React** template, this tutorial is still valid for all the other templates.
 :::
 
-Secondly, you must enter in the project folder and install the dependencies:
+secondly, you must enter in the project folder and install its dependencies:
 ```bash
 cd orchy-react && pnpm i
 ```
 
-Thirdly, invoke the `build` script, to have a production-ready build of the template.
+thirdly, invoke the `build` script, to have a production-ready build of the template:
 ```bash
 pnpm build
 ```
@@ -80,7 +80,7 @@ To better verify the output, open once again the `stats.html` file:
 
 ![stats - import map](./img/stats-import.png)
 
-You will that the references to `react` and `react-dom` are gone.
+You will find that the references to `react` and `react-dom` are gone.
 
 ## Inject dependency at runtime
 
@@ -97,12 +97,12 @@ In your [`orchy` configuration file](../../documentation/wc-configuration/common
 }
 ```
 
-And everything will start to work as always did.
+And everything will work as always did.
 
 ## Conclusion
 
-This procedure allows you to inject the extracted dependencies **only once**, at runtime.
+This procedure allows you to inject the extracted dependencies **only once**, at runtime, reducing the artifacts size and build times.
 
 :::info
-`Import maps` works only with [JavaScript modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules), that's why we use `esm.sh` as [CDN](https://developer.mozilla.org/en-US/docs/Glossary/CDN).
+`Import maps` work only with [JavaScript modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules), that's why we use `esm.sh` as [CDN](https://developer.mozilla.org/en-US/docs/Glossary/CDN).
 :::
