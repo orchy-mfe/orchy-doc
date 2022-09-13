@@ -17,11 +17,11 @@ The configuration content must adhere to the PageBuilder configuration standard.
 If not defined, will be used the following as fallback value:
 ```json
 {
-    "type": "element",
-    "tag": "div",
-    "attributes": {
-        "id": "defaultContainer"
-    }
+  "type": "element",
+  "tag": "div",
+  "attributes": {
+    "id": "defaultContainer"
+  }
 }
 ```
 
@@ -60,19 +60,19 @@ Here is a full example of the `microPages` field configuration.
 
 ```json
 "microPages": {
-    "/route/load": {
-      "pageConfiguration": "page-config",
-      "microFrontends": [
-        {
-          "container": "#toor"  ,
-          "entryPoint": "//localhost:3000",
-          "id": "microfrontend-test-1",
-          "properties": {
-            "mfName": "Name test"
-          }
+  "/route/load": {
+    "pageConfiguration": "page-config",
+    "microFrontends": [
+      {
+        "container": "#toor"  ,
+        "entryPoint": "//localhost:3000",
+        "id": "microfrontend-test-1",
+        "properties": {
+          "mfName": "Name test"
         }
-      ]
-    }
+      }
+    ]
+  }
 }
 ```
 

@@ -30,18 +30,18 @@ Here is a full example of the `common` field configuration.
 
 ```json
 "common": {
-    "stylesheets": [
-      "https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-    ],
-    "importMap": {
-      "imports": {
-        "react": "https://esm.sh/react@18.2.0",
-        "react-dom": "https://esm.sh/react-dom@18.2.0"
-      }
+  "stylesheets": [
+    "https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+  ],
+  "importMap": {
+    "imports": {
+      "react": "https://esm.sh/react@18.2.0",
+      "react-dom": "https://esm.sh/react-dom@18.2.0"
     }
   }
+}
 ```
 
 In plain english, it means that: firstly, once the web component is loaded, the bootstrap css will be injected in the page.
 
-Secondly, all the `es-modules` that will need to load `react` or  `react-dom` will redirected to the relative dependency from `esm.sh`.
+Secondly, all the [JavaScript modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) that will need to load `react` or  `react-dom` will redirected to the relative dependency from `esm.sh`.

@@ -61,12 +61,12 @@ Open the `vite.config.js` file, and add the following configuration:
 
 ```javascript
 build: {
-    rollupOptions: {
-      external: [
-        'react',
-        'react-dom',
-      ]
-    }
+  rollupOptions: {
+    external: [
+      'react',
+      'react-dom',
+    ]
+  }
 }
 ```
 
@@ -81,3 +81,28 @@ To better verify the output, open once again the `stats.html` file:
 ![stats - import map](./img/stats-import.png)
 
 You will that the references to `react` and `react-dom` are gone.
+
+## Inject dependency at runtime
+
+Now, it's time to configure `import maps`.
+
+In your [`orchy` configuration file](../wc-configuration/common.md), you only have to add the following configuration:
+
+```json
+"importMap": {
+  "imports": {
+    "react": "https://esm.sh/react@18.2.0",
+    "react-dom": "https://esm.sh/react-dom@18.2.0"
+  }
+}
+```
+
+And everything will start to work as always did.
+
+## Conclusion
+
+This procedure allows you to inject the extracted dependencies **only once**, at runtime.
+
+:::info
+`Import maps` works only with [JavaScript modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules), that's why we use `esm.sh` as [CDN](https://developer.mozilla.org/en-US/docs/Glossary/CDN).
+:::
