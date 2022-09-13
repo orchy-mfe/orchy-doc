@@ -1,10 +1,10 @@
 ---
-sidebar_position: 7
+sidebar_position: 2
 ---
 
 # Import maps: the easy way
 
-As [previously defined](../wc-configuration/common#commonimportmap), with `import maps` we can define at runtime which source will be used to load a specific module.
+As [previously defined](../../documentation/wc-configuration/common#commonimportmap), with `import maps` we can define at runtime which source will be used to load a specific module.
 
 In this tutorial we will see how to configure a template to use them, and which advantages we can achieve.
 
@@ -86,7 +86,7 @@ You will that the references to `react` and `react-dom` are gone.
 
 Now, it's time to configure `import maps`.
 
-In your [`orchy` configuration file](../wc-configuration/common.md), you only have to add the following configuration:
+In your [`orchy` configuration file](../../documentation/wc-configuration/common.md), you only have to add the following configuration:
 
 ```json
 "importMap": {

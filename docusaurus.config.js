@@ -40,13 +40,6 @@ const config = {
           editUrl:
             'https://github.com/orchy-mfe/orchy-doc/tree/main/',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/orchy-mfe/orchy-doc/tree/main/',
-        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -58,7 +51,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Orchy Project documentation',
+        title: 'Orchy Project',
         logo: {
           alt: 'Orchy Project logo',
           src: 'img/logo.svg',
@@ -66,11 +59,16 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'documentation/intro',
             position: 'left',
             label: 'Documentation',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            type: 'doc',
+            docId: 'tutorials/tutorials/tutorials',
+            position: 'left',
+            label: 'Tutorials',
+          },
           {
             href: 'https://github.com/orchy-mfe',
             label: 'GitHub',
@@ -81,7 +79,7 @@ const config = {
       footer: {
         style: 'dark',
         links: [],
-        copyright: `Copyright © ${new Date().getFullYear()} Orchy Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Orchy Project, Inc. Built with ❤️ & Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
