@@ -12,7 +12,7 @@ So, in this object, the key represents the path that `orchy` will handle to expo
 
 `pageConfiguration` is an optional field which specifies the configuration name that will be fetched to compose your page.
 
-The configuration content must adhere to the PageBuilder configuration standard.
+The configuration content must adhere to the [PageBuilder configuration standard](../page-configuration/page-configuration.md).
 
 If not defined, will be used the following as fallback value:
 ```json
