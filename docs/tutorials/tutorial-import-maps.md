@@ -38,8 +38,46 @@ Take a look at the `build` command result, if you have done everything correctly
 
 ![build command result - no import maps](./img/build-no-importmap.png)
 
-As you can see, there is a `.js` file which size is ~147 KiB.
+As you can see, there is a `.js` file which size is ~147 KB. A little bit heavy for an "hello world", isn't it?
 
-To understand the reasons behind these values, open the `stats.html` file.
+To understand the reasons behind these values, open the `stats.html` file in the root folder of your template.
 
 ![stats - no import maps](./img/stats-no-import.png)
+
+There, you can find that `react-dom` fit the ~85% of the entire bundle, for a total of ~130 KB.
+
+`react` and `react-dom` are always embedded in each React Micro Frontend, so you are going to download them multiple times.
+
+There, `import maps` comes to the rescue!
+
+## Externalize repeated dependencies
+
+To allow `import maps` to load dependencies just once, we **must** extract them from the final bundle.
+
+This is an action that can be done at build time, configuring properly your bundler: for `orchy` templates, it is always [Vite](https://vitejs.dev).
+
+
+Open the `vite.config.js` file, and add the following configuration:
+
+```javascript
+build: {
+    rollupOptions: {
+      external: [
+        'react',
+        'react-dom',
+      ]
+    }
+}
+```
+
+Then, execute again the `build` script.
+
+![build command result - import map](./img/build-importmap.png)
+
+This time, it's execution time will be faster and also it will produce lighter static files.
+
+To better verify the output, open once again the `stats.html` file:
+
+![stats - import map](./img/stats-import.png)
+
+You will that the references to `react` and `react-dom` are gone.
