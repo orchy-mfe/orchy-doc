@@ -6,7 +6,7 @@ sidebar_position: 3
 
 The orchy configuration is divided in two fields: `microPages` and `common`.
 
-Here is a full example of configuration that we will explore in the next pages.
+Here is a full example of the configuration that we are going to explore in the next pages.
 
 ```json
 {
