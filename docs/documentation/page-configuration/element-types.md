@@ -2,9 +2,9 @@
 sidebar_position: 2
 ---
 
-# Element types
+# Configuration by type
 
-Element types define the kind of HTML element you are going to create.
+The `type` property defines the kind of HTML element you are going to create.
 
 You can see most of them as shortcuts to reduce the definition boilerplate.
 
@@ -12,15 +12,28 @@ You can see most of them as shortcuts to reduce the definition boilerplate.
 
 Layout types are shortcuts to create the layout of other HTML elements.
 
-:::info
-Remembed: even for layout types, you can **always** define properties and attributes.
-:::
-
 ### flex-row
 
 `flex-row` is a shortcut for an element with:
 - `div` as tag;
 - `display: flex; flex-direction: row` as style attribute.
+
+E.g., this configuration:
+
+```json
+{
+  "type": "flex-row"
+}
+```
+
+Will produce:
+
+```html
+<div>
+  <div style="display: flex; flex-direction: row">
+  </div>
+</div>
+```
 
 ### flex-column
 
@@ -28,8 +41,50 @@ Remembed: even for layout types, you can **always** define properties and attrib
 - `div` as tag;
 - `display: flex; flex-direction: column` as style attribute.
 
+E.g., this configuration:
+
+```json
+{
+  "type": "flex-column"
+}
+```
+
+Will produce:
+
+```html
+<div>
+  <div style="display: flex; flex-direction: column">
+  </div>
+</div>
+```
+
 ## General types
 
 ## element
 
-`element` type allows you to create an element with a custom tag.
+`element` type allows you to create an element with a custom tag, through the **mandatory** `tag` field.  
+Also, you can specify the optional `url` field, useful to load the entry point JavaScript of a Web Component.
+
+E.g., this configuration:
+
+```json
+{
+  "type": "element",
+  "tag": "orchy-wc",
+  "url": "https://orchy-wc.entry/point.js"
+}
+```
+
+Will produce:
+
+```html
+<div>
+    <orchy-wc></orchy-wc>
+</div>
+```
+
+Also, it will append in the `head` section of the page:
+
+```html
+<script src="https://orchy-wc.entry/point.js"></script>
+```
