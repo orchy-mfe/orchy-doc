@@ -4,9 +4,9 @@ sidebar_position: 2
 
 # Element types
 
-Element types defines the kind of HTML element you are going to create.
+Element types define the kind of HTML element you are going to create.
 
-You can see most of them shortcuts to reduce definition boilerplate.
+You can see most of them as shortcuts to reduce the definition boilerplate.
 
 ## Layout types
 
