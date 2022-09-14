@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # Page configuration
 
-The `@orchy-mfe/page-builder` package is a library that transforms a Page configuration `JSON` in a set of `HTMLElements` that can be appended in your DOM.
+The `@orchy-mfe/page-builder` package is a library that allows us to do [Server Driven UI](https://www.judo.app/blog/server-driven-ui/), transforming a Page configuration `JSON` in a set of `HTMLElements` that can be appended in your DOM.
 
 Here is a full example of the configuration that we are going to explore in the next pages:
 
