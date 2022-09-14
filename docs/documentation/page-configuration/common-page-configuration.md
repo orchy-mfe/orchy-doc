@@ -25,5 +25,5 @@ Attributes **are displayed** when you append the new node to the DOM.
 Properties **are not displayed** when you append the new node to the DOM.
 
 :::info
-Countrary to `attributes`, which are serialized as strings, `properties` can be used to define complex inputs as: JavaScript objects, RxJS ReplaySubject...
+Contrary to `attributes`, which are serialized as strings, `properties` can be used to define complex inputs as: JavaScript objects, RxJS ReplaySubject...
 :::
