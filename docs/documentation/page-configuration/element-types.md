@@ -8,9 +8,9 @@ Element types defines the kind of HTML element you are going to create.
 
 You can see most of them shortcuts to reduce definition boilerplate.
 
-## Impagination types
+## Layout types
 
-The following types are shortcuts to better impaginate other HTML elements.
+The following types are shortcuts to create the layout of other HTML elements.
 
 ### flex-row
 
