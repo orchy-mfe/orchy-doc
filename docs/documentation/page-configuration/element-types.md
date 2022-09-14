@@ -10,7 +10,11 @@ You can see most of them as shortcuts to reduce the definition boilerplate.
 
 ## Layout types
 
-The following types are shortcuts to create the layout of other HTML elements.
+Layout types are shortcuts to create the layout of other HTML elements.
+
+:::info
+Remembed: even for layout types, you can **always** define properties and attributes.
+:::
 
 ### flex-row
 
