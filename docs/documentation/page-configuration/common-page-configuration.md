@@ -10,7 +10,7 @@ Here are described the common fields that can **always** be inserted in each def
 
 `type` is a string which defines the kind of HTML element you are going to create.
 
-Its domain is: `element`, `flex-row`, `flex-column`. For more details, see the [dedicated section](./element-types.md).
+Its domain is: `element`, `flex-row`, `flex-column`. For more details, see the [dedicated section](./configuration-by-type.md).
 
 ## attributes
 
