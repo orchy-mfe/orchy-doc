@@ -20,7 +20,10 @@ Attributes **are displayed** when you append the new node to the DOM.
 
 ## properties
 
-`properties` is an object which defines the properties of an HTML element: countraty to `attributes`, which are serialized as strings, `properties` can be used to define complex inputs as: JavaScript objects, RxJS ReplaySubject...
+`properties` is an object which defines the properties of an HTML element.
 
 Properties **are not displayed** when you append the new node to the DOM.
 
+:::info
+Countrary to `attributes`, which are serialized as strings, `properties` can be used to define complex inputs as: JavaScript objects, RxJS ReplaySubject...
+:::
