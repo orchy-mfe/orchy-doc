@@ -25,3 +25,8 @@ jobs:
           version: latest
       - run: pnpm install --frozen-lockfile
       - run: pnpm build
+      - name: Trigger release
+        uses: peter-evans/repository-dispatch@v2
+        with:
+          token: ${{ secrets.TRIGGER_DEPLOY_ACCESS_TOKEN }}
+          event-type: trigger-pipeline
