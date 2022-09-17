@@ -5,7 +5,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Orchy Project',
+  title: 'Orchy',
   tagline: 'The Micro Frontends orchestrator',
   url: 'https://orchy-mfe.github.io',
   baseUrl: '/',
@@ -47,9 +47,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Orchy Project',
+        title: 'Orchy',
         logo: {
-          alt: 'Orchy Project logo',
+          alt: 'Orchy logo',
           src: 'img/logo.svg',
         },
         items: [
