@@ -85,4 +85,4 @@ Here is a full example of the `microPages` field configuration.
 
 In plain english, it means that: when we will navigate to the `/route/load` path, the `page-config` configuration will be used to compose your page.
 
-Additionally, will be fetched one Micro Frontend from `localhost:3000`, with `microfrontend-test-1` as `id`. Once fetched, it will be mounted in a container with `id=toor` and then will be injected the `mfName` property.
+Additionally, will be fetched one Micro Frontend from `localhost:3000`, with `microfrontend-test-1` as `id`. Once fetched, it will be mounted in a container with `id=toor` and then will be injected the `mfName` and `pageName` properties.
