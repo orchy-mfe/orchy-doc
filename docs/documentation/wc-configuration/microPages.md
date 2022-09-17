@@ -14,7 +14,7 @@ So, in this object, the key represents the path that `orchy` will handle to expo
 
 The configuration content must adhere to the [PageBuilder configuration standard](../page-configuration/page-configuration.md).
 
-If not defined, will be used the following as fallback value:
+If not defined, will be used the following as `pageConfiguration` content:
 ```json
 {
   "type": "element",
@@ -24,6 +24,10 @@ If not defined, will be used the following as fallback value:
   }
 }
 ```
+
+## microPages.properties
+
+`properties` field object contains the additional properties that will be injected to all the Micro Frontends in the page, at mount phase.
 
 ## microPages.microFrontends
 
@@ -51,7 +55,7 @@ If you decide to expose your Micro Frontends, be aware of [Cross Origin Resource
 
 ### microPages.microFrontends.properties
 
-`properties` field object contains the additional properties that will be injected at Micro Frontend bootstrap mount.
+`properties` field object contains the additional properties that will be available at Micro Frontend's mount phase.
 
 
 # microPages configuration example
@@ -71,7 +75,10 @@ Here is a full example of the `microPages` field configuration.
           "mfName": "Name test"
         }
       }
-    ]
+    ],
+    "properties": {
+      "pageName": "Page test"
+    }
   }
 }
 ```

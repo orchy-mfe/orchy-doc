@@ -10,10 +10,10 @@ Here is a full example of the configuration that we are going to explore in the 
 
 ```json
 {
-  "microFrontends": {
+  "microPages": {
     "/route/load": {
       "pageConfiguration": "page-config",
-      "applications": [
+      "microFrontends": [
         {
           "entryPoint": "//localhost:3000",
           "container": "#toor",
