@@ -46,7 +46,7 @@ It is **mandatory** only if multiple Micro Frontends are defined, otherwise is o
 `entryPoint` field defines where is exposed the `index.html` of you Micro Frontend; it can be defined with both a relative or absolute path and even with a different domain.
 
 :::danger
-If you decide to expose your Micro Frontends, be aware of [Cross Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS).
+If you decide to expose your Micro Frontends on different hosts, be aware of [Cross Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS).
 :::
 
 ### microPages.microFrontends.id
