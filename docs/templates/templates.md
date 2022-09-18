@@ -62,6 +62,12 @@ Here an exhaustive list of all the available templates grouped by type.
     </tr>
 </table>
 
+:::info
+All the templates includes unit tests to ensure that they always work correctly.
+
+Additionally, the dependencies of each template are automatically updated using [Renovate](https://docs.renovatebot.com/).
+:::
+
 ## Interactive template download
 
 Would you like to scaffold a new Micro Frontend, without leaving the CLI?
