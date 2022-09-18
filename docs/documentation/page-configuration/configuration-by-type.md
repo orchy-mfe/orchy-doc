@@ -60,7 +60,7 @@ Will produce:
 
 ## General types
 
-## element
+### element
 
 `element` type allows you to create an element with a custom tag, through the **mandatory** `tag` field.  
 Also, you can specify the optional `url` field, useful to load the entry point JavaScript of a Web Component.

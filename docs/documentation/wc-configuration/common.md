@@ -24,7 +24,7 @@ The data model of this field will always be aligned with the standard specificat
 :::
 
 
-# common configuration example
+## common configuration example
 
 Here is a full example of the `common` field configuration.
 

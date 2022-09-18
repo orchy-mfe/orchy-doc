@@ -58,7 +58,7 @@ If you decide to expose your Micro Frontends on different hosts, be aware of [Cr
 `properties` field object contains the additional properties that will be available at Micro Frontend's mount phase.
 
 
-# microPages configuration example
+## microPages configuration example
 
 Here is a full example of the `microPages` field configuration.
 
