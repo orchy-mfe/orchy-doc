@@ -86,3 +86,15 @@ Here is a full example of the `microPages` field configuration.
 In plain english, it means that: when we will navigate to the `/route/load` path, the `page-config` configuration will be used to compose your page.
 
 Additionally, will be fetched one Micro Frontend from `localhost:3000`, with `microfrontend-test-1` as `id`. Once fetched, it will be mounted in a container with `id=toor` and then will be injected the `mfName` and `pageName` properties.
+
+## Properties injection
+
+In properties injection, `microPages.microFrontend.properties` has more priority compared to `microPages.properties`.
+
+This means that if a property is defined in both `microPage.properties` and `microPages.microFrontend.properties`, only the value in `microPages.microFrontend.properties` will be effectively injected.
+
+:::danger
+There are two properties reserved for specific `orchy` usage:
+- `baseUrl`: defines the base url for internal Micro Frontend routing;
+- `eventBus`: an [RxJS ReplaySubject](https://rxjs.dev/api/index/class/ReplaySubject) used to communicate with the other Micro Frontends in the same page.
+:::
