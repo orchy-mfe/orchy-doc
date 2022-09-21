@@ -8,8 +8,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Orchy was designed to be easily installed wherever you want, with a quick configuration.
       </>
     ),
   },
@@ -18,18 +17,16 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Orchy lets you focus only on your Micro Frontends development: it will do, under the hood, all the necessary work to load them on your page. 
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Powered by Web Standards',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Orchy takes advantage of modern Web Standards like Web Components and import maps to bring you a great balance between developer experience and performance.
       </>
     ),
   },
