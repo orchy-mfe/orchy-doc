@@ -27,6 +27,7 @@ const config = {
 
   plugins: [
     require.resolve("docusaurus-plugin-image-zoom"),
+    // @ts-ignore
     customizedSvgo
   ],
 

@@ -4,7 +4,7 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Easy to use',
     Svg: require('@site/static/img/easy.svg').default,
     description: (
       <>
@@ -13,7 +13,7 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Focus on what matters',
     Svg: require('@site/static/img/focus.svg').default,
     description: (
       <>
