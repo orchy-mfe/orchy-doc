@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/easy.svg').default,
     description: (
       <>
         Orchy was designed to be easily installed wherever you want, with a quick configuration.
