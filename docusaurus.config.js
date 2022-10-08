@@ -2,6 +2,7 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const customizedSvgo = require('./customize-svgo');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -24,7 +25,10 @@ const config = {
     locales: ['en'],
   },
 
-  plugins: [require.resolve("docusaurus-plugin-image-zoom")],
+  plugins: [
+    require.resolve("docusaurus-plugin-image-zoom"),
+    customizedSvgo
+  ],
 
   presets: [
     [

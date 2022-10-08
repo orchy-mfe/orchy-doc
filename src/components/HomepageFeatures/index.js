@@ -14,7 +14,7 @@ const FeatureList = [
   },
   {
     title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/focus.svg').default,
     description: (
       <>
         Orchy lets you focus only on your Micro Frontends development: it will do, under the hood, all the necessary work to load them on your page. 
