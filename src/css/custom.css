@@ -29,5 +29,5 @@
 }
 
 .hero--primary {
-  background: linear-gradient(90deg, rgba(96,113,219,1) 0%, rgba(163,232,249,1) 33%, rgba(249,235,143,1) 66%, rgba(243,126,90,1) 100%);
+  background: linear-gradient(90deg, rgba(96,113,219,1) 0%, rgba(243,126,90,1) 100%);
 }
