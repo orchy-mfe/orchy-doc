@@ -7,7 +7,8 @@ module.exports = function () {
       const svgoPlugin = configuration.module.rules.find(findSvgoPlugin)
       const svgoConfig = svgoPlugin.oneOf[0].use[0]
       svgoConfig.options.svgoConfig.plugins.push('prefixIds')
-      return configuration
+
+      return true
     },
   };
 };
