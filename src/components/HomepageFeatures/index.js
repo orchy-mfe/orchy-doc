@@ -23,7 +23,7 @@ const FeatureList = [
   },
   {
     title: 'Powered by Web Standards',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/empower.svg').default,
     description: (
       <>
         Orchy takes advantage of modern Web Standards like Web Components and import maps to bring you a great balance between developer experience and performance.
