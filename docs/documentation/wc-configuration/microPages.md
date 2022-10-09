@@ -55,7 +55,7 @@ If you decide to expose your Micro Frontends on different hosts, be aware of [Cr
 
 ### microPages.microFrontends.properties
 
-`properties` field object contains the additional properties that will be available at Micro Frontend's mount phase.
+`properties` field object contains the additional properties that will be available at the Micro Frontend's mount phase.
 
 
 ## microPages configuration example
@@ -89,7 +89,7 @@ Additionally, will be fetched one Micro Frontend from `localhost:3000`, with `mi
 
 ## Properties injection
 
-In properties injection, `microPages.microFrontend.properties` has more priority compared to `microPages.properties`.
+In properties injection, `microPages.microFrontend.properties` has more priority than `microPages.properties`.
 
 This means that if a property is defined in both `microPage.properties` and `microPages.microFrontend.properties`, only the value in `microPages.microFrontend.properties` will be effectively injected.
 
