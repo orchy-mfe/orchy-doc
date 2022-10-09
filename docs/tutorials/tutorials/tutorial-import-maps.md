@@ -86,7 +86,7 @@ To better verify the output, open once again the `stats.html` file:
 
 You will find that the references to `react` and `react-dom` are gone.
 
-## Inject dependency at runtime
+## Inject libraries at runtime
 
 Now, it's time to configure `import maps`.
 
