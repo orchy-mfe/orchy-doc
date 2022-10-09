@@ -5,7 +5,7 @@ sidebar_position: 4
 # Customize eventBus payload type
 
 :::tip
-The following operations are already done if you decide to use one of ours [templates](../../templates/templates.md).
+The first two operations are already done if you decide to use one of our [templates](../../templates/templates.md).
 :::
 
 For a TypeScript project, you can define the `ReplaySubject` payload type using these steps:

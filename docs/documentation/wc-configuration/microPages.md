@@ -95,6 +95,8 @@ This means that if a property is defined in both `microPage.properties` and `mic
 
 :::danger
 There are two properties reserved for specific `orchy` usage:
-- `baseUrl`: defines the base url for internal Micro Frontend routing;
-- `eventBus`: an [RxJS ReplaySubject](https://rxjs.dev/api/index/class/ReplaySubject) used to communicate with the other Micro Frontends in the same page.
+- `baseUrl`: defines the base url for internal Micro Frontend routing.  
+  Take a look at [this example](https://github.com/orchy-mfe/orchy-examples/tree/main/examples/routing-mfe) to better understand how to use it;
+- `eventBus`: an [RxJS ReplaySubject](https://rxjs.dev/api/index/class/ReplaySubject) used to communicate with the other Micro Frontends in the same page.  
+    Take a look at [this example](https://github.com/orchy-mfe/orchy-examples/tree/main/examples/communication-mfe-mfe) to better understand how to use it.
 :::

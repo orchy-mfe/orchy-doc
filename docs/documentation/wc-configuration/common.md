@@ -13,9 +13,11 @@ This field is used to inject once all the elements in common between each Micro 
 ## common.importMap
 
 `importMap` defines a way to control the behavior of JavaScript imports.  
-Despite [it is still a proposal](https://github.com/WICG/import-maps), and only Chrome directly supports it, `orchy` installs a polyfill to extends the support to all the other browsers.
+Despite [it is still a proposal](https://github.com/WICG/import-maps), and only Chrome directly supports it, `orchy` installs a polyfill to enable the support to all the other browsers.
 
 The content of this field is the same as a [standard import map](https://github.com/WICG/import-maps#the-import-map).
+
+Take a look at [the dedicated tutorial](../../tutorials/tutorials/tutorial-import-maps.md) to better understand how to configure it.
 
 :::caution
 When it will be supported out-of-the-box by [all the major browsers](https://caniuse.com/import-maps), the [polyfill](https://www.npmjs.com/package/es-module-shims) will be removed.

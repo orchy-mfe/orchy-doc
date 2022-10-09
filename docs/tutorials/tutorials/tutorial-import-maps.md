@@ -9,7 +9,7 @@ As [previously defined](../../documentation/wc-configuration/common#commonimport
 In this tutorial we will see how to configure a template to use them, and which advantages we can achieve.
 
 :::tip
-An example of the result can be found [here](https://github.com/orchy-mfe/orchy-examples/tree/main/examples/mfe-import-maps).
+An example of the final result can be found [here](https://github.com/orchy-mfe/orchy-examples/tree/main/examples/mfe-import-maps).
 :::
 
 ## Template preparation
