@@ -77,6 +77,12 @@ const config = {
             label: 'Tutorials',
           },
           {
+            type: 'doc',
+            docId: 'examples/examples/examples',
+            position: 'left',
+            label: 'Examples',
+          },
+          {
             href: 'https://github.com/orchy-mfe',
             label: 'GitHub',
             position: 'right',
