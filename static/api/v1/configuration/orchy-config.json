@@ -5,7 +5,7 @@
       "microFrontends": [
         {
           "entryPoint": "/communication-react-mfe",
-          "id": "microfrontend-test-1"
+          "id": "communication-react-mfe"
         }
       ]
     }
