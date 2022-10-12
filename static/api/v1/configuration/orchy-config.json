@@ -8,6 +8,21 @@
           "id": "communication-react-mfe"
         }
       ]
+    },
+    "/docs/examples/examples/communication/mfe-mfe": {
+      "pageConfiguration": "communication-mfe-mfe-page-config",
+      "microFrontends": [
+        {
+          "entryPoint": "/communication-counter-react-mfe",
+          "id": "communication-counter-react-mfe",
+          "container": "#communication-mfe-mfe-react"
+        },
+        {
+          "entryPoint": "/communication-counter-svelte-mfe",
+          "id": "communication-svelte-mfe",
+          "container": "#communication-mfe-mfe-svelte"
+        }
+      ]
     }
   }
 }

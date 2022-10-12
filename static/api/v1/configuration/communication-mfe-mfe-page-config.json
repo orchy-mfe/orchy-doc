@@ -1,0 +1,16 @@
+{
+    "type": "flex-row",
+    "content": [{
+        "type": "element",
+        "tag": "div",
+        "attributes": {
+            "id":"communication-mfe-mfe-react"
+        }
+    }, {
+        "type": "element",
+        "tag": "div",
+        "attributes": {
+            "id":"communication-mfe-mfe-svelte"
+        }
+    }]
+}
