@@ -5,10 +5,10 @@ sidebar_position: 2
 # Installation
 
 To use the Web Component in your website, you **must**:
-- firstly, install the package **@orchy-mfe/wc** from [`npm`](https://www.npmjs.com/);
+- firstly, install the package **@orchy-mfe/web-component** from [`npm`](https://www.npmjs.com/);
 - secondly, register the Web Component definition importing its entry point with:
 ```javascript
-import '@orchy-mfe/wc'
+import '@orchy-mfe/web-component'
 ```
 - finally, you can use it inside your page with:
 ```html
