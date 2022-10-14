@@ -23,6 +23,15 @@
           "container": "#communication-mfe-mfe-svelte"
         }
       ]
+    },
+    "/docs/examples/examples/communication/import-maps": {
+      "pageConfiguration": "import-maps-page-config",
+      "microFrontends": [
+        {
+          "entryPoint": "/react-import-maps",
+          "id": "react-import-maps"
+        }
+      ]
     }
   }
 }
