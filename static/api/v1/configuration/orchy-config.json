@@ -24,7 +24,7 @@
         }
       ]
     },
-    "/docs/examples/examples/communication/import-maps": {
+    "/docs/examples/examples/import-maps": {
       "pageConfiguration": "import-maps-page-config",
       "microFrontends": [
         {
@@ -32,6 +32,14 @@
           "id": "react-import-maps"
         }
       ]
+    }
+  },
+  "common": {
+    "importMap": {
+      "imports": {
+        "react": "https://esm.sh/react@18.2.0",
+        "react-dom": "https://esm.sh/react-dom@18.2.0"
+      }
     }
   }
 }
