@@ -39,7 +39,7 @@ The Micro Frontend definition is made through the following fields.
 
 `container` is a field that defines the [querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) used to retrieve the container element in which your Micro Frontend will be mounted.
 
-It is **mandatory** only if multiple Micro Frontends are defined, otherwise is optional with `#root` as default value.
+It is **mandatory** only if there are multiple Micro Frontends for the same page, otherwise is optional with `#orchy-root` as default value.
 
 ### microPages.microFrontends.entryPoint
 
