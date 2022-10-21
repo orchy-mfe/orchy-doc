@@ -60,6 +60,15 @@ Here an exhaustive list of all the available templates grouped by type.
             <a href="https://github.com/orchy-mfe/orchy-preact-js-typescript-template">TypeScript</a>
         </td>
     </tr>
+    <tr>
+        <td>Solid</td>
+        <td>
+            <a href="https://github.com/orchy-mfe/orchy-solid-js-template">JavaScript</a>
+        </td>
+        <td>
+            <a href="https://github.com/orchy-mfe/orchy-solid-js-typescript-template">TypeScript</a>
+        </td>
+    </tr>
 </table>
 
 :::info
