@@ -12,17 +12,7 @@ Here is a full example of the configuration that we are going to explore in the 
 {
   "microPages": {
     "/route/load": {
-      "pageConfiguration": "page-config",
-      "microFrontends": [
-        {
-          "entryPoint": "//localhost:3000",
-          "container": "#toor",
-          "id": "microfrontend-test-1",
-          "properties": {
-            "mfName": "Name test"
-          }
-        }
-      ]
+      "pageConfiguration": "page-config"
     }
   },
   "common": {
