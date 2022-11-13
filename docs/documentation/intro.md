@@ -9,6 +9,7 @@ The `Orchy Project` consists in a bunch of utilities and templates that can help
 All of this is possible thanks to an open source [Web Component](https://developer.mozilla.org/en-US/docs/Web/Web_Components) which aims to orchestrate multiple multi-tenant frontend applications leveraging on the following technologies:
 
 - [Micro Frontends](https://micro-frontends.org/) pattern;
+- [Web Components](https://www.webcomponents.org/introduction);
 - [JavaScript modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules);
 - [Server Driven UI](https://www.judo.app/blog/server-driven-ui/).
 
@@ -24,9 +25,10 @@ The [`orchy-core`](https://github.com/orchy-mfe/orchy-core) repository is the ma
 - `@orchy-mfe/back-end`: a [Fastify](https://www.fastify.io/) backend that can be used to serve `orchy`'s configuration files;
 - `@orchy-mfe/models`: includes the TypeScript models for the `orchy`'s configurations and the Micro Frontends properties;
 - `@orchy-mfe/page-builder`: the library which enables the Server Driven UI;
+- `@orchy-mfe/spa-adapter`: the Web Component class that can be extended to wrap your Single Page Applications;
 - `@orchy-mfe/web-component`: the Web Component which embeds the orchestration logics.
 
-Same as Web Components are **technology-agnostic** by definition, so is `orchy`: it means that it integrates with low effort with your current Single Page Application, being it React, Preact, Vue, Svelte or anything else you like...even Vanilla JavaScript!
+Same as Web Components are **technology-agnostic** by definition, so is `orchy`: it means that it integrates with low effort with your current Single Page Application, being it React, Preact, Vue, Svelte, Solid or anything else you like...even Vanilla JavaScript!
 
 The only thing that you need is to understand how to configure it. We are going deep in the configuration structure in the [next section](./wc-configuration/wc-configuration.md).
 

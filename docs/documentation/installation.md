@@ -6,7 +6,7 @@ sidebar_position: 2
 
 To use the Web Component in your website, you **must**:
 - firstly, install the package **@orchy-mfe/web-component** from [`npm`](https://www.npmjs.com/);
-- secondly, register the Web Component definition importing its entry point with:
+- secondly, register the Web Component with:
 ```javascript
 import '@orchy-mfe/web-component'
 ```
@@ -19,7 +19,7 @@ import '@orchy-mfe/web-component'
 
 To configure its behavior, the Web Component exposes two attributes:
 - `basePath`: the base path that will be used by the internal router to handle the Micro Frontends loading.  
-  Its default value is the value of `window.location.pathname` when it is inserted in the page;
+  Its default value is the value of `window.location.pathname` when the Web Component is inserted in the page;
 - `configurationName`: the name of the configuration that will be fetched to orchestrate your pages and your Micro Frontends.  
   Its default value is `orchy-config`. 
   
