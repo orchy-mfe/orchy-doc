@@ -74,3 +74,28 @@ Will produce:
 ```html
 <orchy-wc></orchy-wc>
 ```
+
+### micro-frontend
+
+`micro-frontend` type allows you to create an element with a custom tag, through the **mandatory** `tag` field.  
+Also, you can specify the optional `url` field, useful to load the entry point JavaScript of your application.
+
+E.g., this configuration:
+
+```json
+{
+  "type": "element",
+  "tag": "react-mfe",
+  "url": "https://react-mfe.entry/point.js"
+}
+```
+
+Will produce:
+
+```html
+<react-mfe></react-mfe>
+```
+
+:::caution
+For the `micro-frontend` type, all the attributes and properties will be aggregated and then injected in a single property called `orchyProperties`.
+:::
