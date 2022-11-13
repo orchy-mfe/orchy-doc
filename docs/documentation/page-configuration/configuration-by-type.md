@@ -29,10 +29,7 @@ E.g., this configuration:
 Will produce:
 
 ```html
-<div>
-  <div style="display: flex; flex-direction: row">
-  </div>
-</div>
+<div style="display: flex; flex-direction: row"></div>
 ```
 
 ### flex-column
@@ -52,10 +49,7 @@ E.g., this configuration:
 Will produce:
 
 ```html
-<div>
-  <div style="display: flex; flex-direction: column">
-  </div>
-</div>
+<div style="display: flex; flex-direction: column"></div>
 ```
 
 ## General types
@@ -78,13 +72,5 @@ E.g., this configuration:
 Will produce:
 
 ```html
-<div>
-    <orchy-wc></orchy-wc>
-</div>
-```
-
-Also, it will append in the `head` section of the page:
-
-```html
-<script src="https://orchy-wc.entry/point.js"></script>
+<orchy-wc></orchy-wc>
 ```
