@@ -12,7 +12,10 @@ Here is a full example of the configuration that we are going to explore in the 
 {
   "microPages": {
     "/route/load": {
-      "pageConfiguration": "page-config"
+      "pageConfiguration": "page-config",
+      "properties": {
+        "pageName": "Page test"
+      }
     }
   },
   "common": {

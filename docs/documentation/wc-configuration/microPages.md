@@ -29,35 +29,6 @@ If not defined, will be used the following as `pageConfiguration` content:
 
 `properties` field object contains the additional properties that will be injected to all the Micro Frontends in the page, at mount phase.
 
-## microPages.microFrontends
-
-`microFrontends` is a **mandatory** array field that is used to define the Micro Frontends to load for the specified path.
-
-The Micro Frontend definition is made through the following fields.
-
-### microPages.microFrontends.container
-
-`container` is a field that defines the [querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) used to retrieve the container element in which your Micro Frontend will be mounted.
-
-It is **mandatory** only if there are multiple Micro Frontends for the same page, otherwise is optional with `#orchy-root` as default value.
-
-### microPages.microFrontends.entryPoint
-
-`entryPoint` field defines where is exposed the `index.html` of you Micro Frontend; it can be defined with both a relative or absolute path and even with a different domain.
-
-:::danger
-If you decide to expose your Micro Frontends on different hosts, be aware of [Cross Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS).
-:::
-
-### microPages.microFrontends.id
-
-`id` field represents a **mandatory unique identifier** for your Micro Frontend, used for caching purposes.
-
-### microPages.microFrontends.properties
-
-`properties` field object contains the additional properties that will be available at the Micro Frontend's mount phase.
-
-
 ## microPages configuration example
 
 Here is a full example of the `microPages` field configuration.
@@ -66,16 +37,6 @@ Here is a full example of the `microPages` field configuration.
 "microPages": {
   "/route/load": {
     "pageConfiguration": "page-config",
-    "microFrontends": [
-      {
-        "container": "#toor"  ,
-        "entryPoint": "//localhost:3000",
-        "id": "microfrontend-test-1",
-        "properties": {
-          "mfName": "Name test"
-        }
-      }
-    ],
     "properties": {
       "pageName": "Page test"
     }
@@ -95,7 +56,7 @@ This means that if a property is defined in both `microPage.properties` and `mic
 
 :::danger
 There are two properties reserved for specific `orchy` usage:
-- `baseUrl`: defines the base url for internal Micro Frontend routing.  
+- `basePath`: defines the base path for internal Micro Frontend routing.  
   Take a look at [this example](https://github.com/orchy-mfe/orchy-examples/tree/main/examples/routing-mfe) to better understand how to use it;
 - `eventBus`: an [RxJS ReplaySubject](https://rxjs.dev/api/index/class/ReplaySubject) used to communicate with the other Micro Frontends in the same page.  
     Take a look at [this example](https://github.com/orchy-mfe/orchy-examples/tree/main/examples/communication-mfe-mfe) to better understand how to use it.
