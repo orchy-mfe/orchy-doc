@@ -22,25 +22,7 @@ First of all, you **must** configure your bundler.
 <Tabs groupId='bundler'>
 <TabItem label="Vite" value="vite" default>
 
-For [Vite](https://vitejs.dev/), you **must** install [`vite-plugin-qiankun`](https://www.npmjs.com/package/vite-plugin-qiankun) and configure it as follows:
-
-```javascript title="vite.config"
-import qiankun from "vite-plugin-qiankun";
-
-...
-  plugins: [
-    ...
-    qiankun("REPLACE_WITH_YOUR_MICROFRONTEND_ID", { useDevMode: true }),
-    ...
-  ]
-...
-```
-
-:::warning
-`REPLACE_WITH_YOUR_MICROFRONTEND_ID` **must** be replaced with the same value as [microPages.microFrontends.id](../../documentation/wc-configuration/microPages.md#micropagesmicrofrontendsid).
-:::
-
-Additionally, you **must** configure the [`base` shared option of Vite](https://vitejs.dev/config/shared-options.html#base).
+For [Vite](https://vitejs.dev/), you **must** configure the [`base` shared option of Vite](https://vitejs.dev/config/shared-options.html#base).
 
 ```javascript
 base: mode === "development" ? `http://localhost:${port}/` : "REPLACE_WITH_STATIC_FILES_POSITION",
@@ -59,22 +41,23 @@ To fix this, enable the right headers configuring the [server.cors property](htt
 :::
 
 </TabItem>
-<TabItem label="webpack v4" value="webpack_v4">
+<TabItem label="Webpack" value="webpack">
 
-For [webpack](https://webpack.js.org/), we **must** configure three fields of the `output` object:
+For [Webpack](https://webpack.js.org/), we **must** configure one field of the `output` object:
 
 ```javascript
-const { name } = require('./package');
-
-webpackConfig.output.library = `${name}-[name]`;
-webpackConfig.output.libraryTarget = 'umd';
-webpackConfig.output.globalObject = 'window';
+webpackConfig.output.publicPath = mode === "development" ? `http://localhost:${port}/` : "REPLACE_WITH_STATIC_FILES_POSITION";
 ```
+
+Where:
+- `port` is the port used by the development server;
+- `REPLACE_WITH_STATIC_FILES_POSITION` **must** be replaced with the URL used to expose your static files.  
+  Here you can also specify a different hostname, if you decide to host them in different CDNs.
 
 :::note
 
 Durint local development, you could have some problems related to [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS).  
-To fix this, enable the right headers configuring the `headers` property.
+To fix this, enable the right headers configuring the [`headers` property](https://webpack.js.org/configuration/dev-server/#devserverheaders).
 
 :::
 
@@ -83,100 +66,66 @@ To fix this, enable the right headers configuring the `headers` property.
 
 ## Entry file configuration
 
-Now, we **must** configure the entry file of your application:
+Firstly, install the `@orchy-mfe/spa-adapter` package:
 
-<Tabs groupId='bundler'>
-<TabItem label="Vite" value="vite" default>
-
-Firstly, import the `vite-plugin-qiankun` helpers.
-
-```javascript
-import {renderWithQiankun, qiankunWindow} from 'vite-plugin-qiankun/dist/helper'
+```bash
+npm i @orchy-mfe/spa-adapter
 ```
 
-Next, edit the application bootstrap inserting the following boilerplate:
+Then, we **must** edit the entry file of your application: it is usually named `main` or `index`.
 
-```javascript
-renderWithQiankun({
-  mount(props) {
-    render(props)
-  },
-  bootstrap() {
-  },
-  unmount() {
-  },
-  update() {
-  },
-})
+Here we wrap the mount process of your application using the `OrchyMicroFrontend` class:
 
-if (!qiankunWindow.__POWERED_BY_QIANKUN__) {
-  render({})
-}
-```
+:::caution
 
-</TabItem>
-<TabItem label="webpack v4" value="webpack_v4">
-
-Firstly, create a file called `public-path`, with this exact content:
-
-```javascript title="public-path"
-if (window.__POWERED_BY_QIANKUN__) {
-    __webpack_public_path__ = window.__INJECTED_PUBLIC_PATH_BY_QIANKUN__
-}
-```
-
-Secondly, you **must** import it:
-
-:::danger
-
-The `public-path` file **must** be the first `import` of your entry point.
+This example works for React, but you can easily do the same thing for other frameworks/libraries.
 
 :::
 
-Finally, we **must** export three functions:
-
 ```javascript
-export async function mount (props) {
-  render(props)
+import OrchyMicroFrontend from '@orchy-mfe/spa-adapter'
+export class ReactMfe extends OrchyMicroFrontend {
+  root
+  async mount(orchyProps) {
+    this.root = createRoot(this.getContainer())
+    this.root.render(
+      <StrictMode>
+        <BrowserRouter basename={orchyProps?.baseUrl}>
+          <App />
+        </BrowserRouter>
+      </StrictMode>
+    )
+  }
+
+  async unmount(orchyProps) {
+    this.root?.unmount()
+  }
 }
 
-export async function unmount (props) {
-}
-
-export async function bootstrap () {
-
-}
-
-if (!window.__POWERED_BY_QIANKUN__) {
-  render({})
-}
+customElements.define('react-mfe', ReactMfe)
 ```
-  
-</TabItem>
-</Tabs>
 
-The `render` function is the one that bootstraps your application.  
-E.g., for `React` it should be something like:
+Here we are defining the `ReactMfe` class, and associating it to the `react-mfe` custom element tag, which is the one that will be configured in the [`micro-frontend` page configuration type](../../documentation/page-configuration/configuration-by-type#micro-frontend).
 
-```javascript
-const render = (props = {}) => {
-  const container = props.container ?? document
-  root = createRoot(container.querySelector('#root'))
-  root.render(
-    <StrictMode>
-      <App />
-    </StrictMode>
-  )
-}
+The `mount` method will bootstraps your application, while the `unmount` method will tear down it.
+Under the hood, the `OrchyMicroFrontend` class will manage the most common part of the lifecycle for you.
+
+## HTML file configuration
+
+Now, we must change the `index.html` file that will be used to place our custom element inside the page:
+
+```html
+<body>
+  <react-mfe></react-mfe>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
 ```
 
 ## Conclusion
 
-With this boilerplate, the application bootstrap is now *conditional*, because:
-- if it is used as a standard SPA, it will be mounted as always did:
-- if it is used in `orchy`, its lifecycle will be managed using [qiankun](https://qiankun.umijs.org/).
+With this boilerplate, your application will be able to be booted both as `orchy` Micro Frontend and as standalone application.
 
-:::caution
+:::note
 You should always implement the `unmount` function, to avoid any kind of memory leak or undesired behavior.
 
 Take a look at the [`React` template for an implementation example](https://github.com/orchy-mfe/orchy-react-js-typescript-template/blob/main/src/main.tsx).

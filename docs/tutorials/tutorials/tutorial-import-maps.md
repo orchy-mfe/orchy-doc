@@ -26,17 +26,17 @@ npx create-orchy-mfe -t react -d ./ -T=false -n orchy-react
 Although the command above you will scaffold a **JavaScript React** template, this tutorial is still valid for all the other templates.
 :::
 
-secondly, you must enter in the project folder and install its dependencies:
+Secondly, you must enter in the project folder and install its dependencies:
 ```bash
 cd orchy-react && pnpm i
 ```
 
-thirdly, invoke the `build` script, to have a production-ready build of the template:
+Thirdly, invoke the `build` script, to have a production-ready build of the template:
 ```bash
 pnpm build
 ```
 
-## Build: an artifact problem
+## Build: the artifact size problem
 
 Take a look at the `build` command result, if you have done everything correctly you should have a similar result:
 
@@ -54,14 +54,14 @@ There, you can find that `react-dom` fit the ~85% of the entire bundle, for a to
 
 There, `import maps` comes to the rescue!
 
-## Externalize repeated dependencies
+## Externalize dependencies
 
-To allow `import maps` to load dependencies just once, we **must** extract them from the final bundle.
+To allow `import maps` to load dependencies just once, we **must** exclude them from the final bundle.
 
 This is an action that can be done at build time, configuring properly your bundler: for `orchy` templates, it is always [Vite](https://vitejs.dev).
 
 
-Open the `vite.config.js` file, and add the following configuration:
+Open the `vite.config.js` file, and add the following configuration to exclude both `react` and `react-dom`:
 
 ```javascript
 build: {
@@ -74,7 +74,7 @@ build: {
 }
 ```
 
-Then, execute again the `build` script.
+Then, run again the `build` script.
 
 ![build command result - import map](./img/build-importmap.png)
 
@@ -88,7 +88,7 @@ You will find that the references to `react` and `react-dom` are gone.
 
 ## Inject libraries at runtime
 
-Now, it's time to configure `import maps`.
+Now, it's time to configure `import maps` to inject `react` and `react-dom` at runtime.
 
 In your [`orchy` configuration file](../../documentation/wc-configuration/common.md), you only have to add the following configuration:
 

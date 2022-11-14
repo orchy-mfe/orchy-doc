@@ -8,24 +8,13 @@ sidebar_position: 4
 The first two operations are already done if you decide to use one of our [templates](../../templates/templates.md).
 :::
 
-For a TypeScript project, you can define the `ReplaySubject` payload type using these steps:
+For a TypeScript project, you can define the `ReplaySubject` payload using the `generic` provided by the `OrchyMicroFrontend` class.
 
-- firstly, install `@orchy-mfe/models` from [npm](https://npmjs.com);
-- secondly, create a file called `env.d.ts` in your source folder.  
 The file content should be equivalent to:
 
 ```javascript
-import {MicrofrontendProperties} from '@orchy-mfe/models'
-import 'vite-plugin-qiankun/dist/helper'
+import OrchyBaseMfe from '@orchy-mfe/spa-adapter'
+export class ReactMfe extends OrchyBaseMfe<{kind: string}> {
 
-declare module 'vite-plugin-qiankun/dist/helper' {
-  interface QiankunProps extends MicrofrontendProperties<any> {
-  }
 }
 ```
-
-- finally, modify the `any` with your desired type.
-
-:::note
-This procedure is also valid if you want types definition for the [reserved orchy properties](../../documentation/wc-configuration/microPages.md#properties-injection).
-:::

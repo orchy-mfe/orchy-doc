@@ -84,7 +84,7 @@ E.g., this configuration:
 
 ```json
 {
-  "type": "element",
+  "type": "micro-frontend",
   "tag": "react-mfe",
   "url": "https://react-mfe.entry/point.js"
 }
