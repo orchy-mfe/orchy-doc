@@ -19,7 +19,7 @@
     "@docusaurus/preset-classic": "2.2.0",
     "@easyops-cn/docusaurus-search-local": "^0.33.5",
     "@mdx-js/react": "1.6.22",
-    "@orchy-mfe/web-component": "^0.1.2",
+    "@orchy-mfe/web-component": "^0.2.0",
     "clsx": "^1.2.1",
     "cspell": "^6.14.2",
     "docusaurus-plugin-image-zoom": "^0.1.1",
