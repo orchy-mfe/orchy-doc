@@ -1,13 +1,7 @@
 {
   "microPages": {
     "/docs/examples/examples/communication/mfe-iframe": {
-      "pageConfiguration": "communication-mfe-iframe-page-config",
-      "microFrontends": [
-        {
-          "entryPoint": "/communication-react-mfe",
-          "id": "communication-react-mfe"
-        }
-      ]
+      "pageConfiguration": "communication-mfe-iframe-page-config"
     },
     "/docs/examples/examples/communication/mfe-mfe": {
       "pageConfiguration": "communication-mfe-mfe-page-config",

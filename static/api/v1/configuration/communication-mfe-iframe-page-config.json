@@ -1,11 +1,9 @@
 {
     "type": "flex-row",
     "content": [{
-        "type": "element",
-        "tag": "div",
-        "attributes": {
-            "id":"orchy-root"
-        }
+        "type": "micro-frontend",
+        "tag": "communication-react-mfe",
+        "url": "/communication-react-mfe/index.js"
     }, {
         "type": "element",
         "tag": "iframe",
