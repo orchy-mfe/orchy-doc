@@ -1,0 +1,15 @@
+{
+    "type": "flex-row",
+    "attributes": {
+        "style": "width: 100vw"
+    },
+    "content": [{
+        "type": "micro-frontend",
+        "tag": "react-routing-mfe",
+        "url": "/react-routing/index.js"
+    }, {
+        "type": "micro-frontend",
+        "tag": "svelte-routing-mfe",
+        "url": "/svelte-routing/index.js"
+    }]
+}

@@ -4,28 +4,13 @@
       "pageConfiguration": "communication-mfe-iframe-page-config"
     },
     "/docs/examples/examples/communication/mfe-mfe": {
-      "pageConfiguration": "communication-mfe-mfe-page-config",
-      "microFrontends": [
-        {
-          "entryPoint": "/communication-counter-react-mfe",
-          "id": "communication-counter-react-mfe",
-          "container": "#communication-mfe-mfe-react"
-        },
-        {
-          "entryPoint": "/communication-counter-svelte-mfe",
-          "id": "communication-svelte-mfe",
-          "container": "#communication-mfe-mfe-svelte"
-        }
-      ]
+      "pageConfiguration": "communication-mfe-mfe-page-config"
     },
     "/docs/examples/examples/import-maps": {
-      "pageConfiguration": "import-maps-page-config",
-      "microFrontends": [
-        {
-          "entryPoint": "/react-import-maps",
-          "id": "react-import-maps"
-        }
-      ]
+      "pageConfiguration": "import-maps-page-config"
+    },
+    "/docs/examples/examples/routing": {
+      "pageConfiguration": "routing-config"
     }
   },
   "common": {
