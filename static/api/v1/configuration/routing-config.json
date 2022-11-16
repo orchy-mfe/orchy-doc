@@ -1,8 +1,5 @@
 {
     "type": "flex-row",
-    "attributes": {
-        "style": "width: 100vw"
-    },
     "content": [{
         "type": "micro-frontend",
         "tag": "react-routing-mfe",
