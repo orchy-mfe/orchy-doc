@@ -25,6 +25,12 @@ Here an exhaustive list of all the available templates grouped by type.
         </td>
     </tr>
     <tr>
+        <td>Angular</td>
+        <td colspan="2" style={{textAlign: 'center'}}>
+            <a href="https://github.com/orchy-mfe/orchy-angular-typescript-template">TypeScript</a>
+        </td>
+    </tr>
+    <tr>
         <td>Vue</td>
         <td>
             <a href="https://github.com/orchy-mfe/orchy-vue-js-template">JavaScript</a>
@@ -43,15 +49,6 @@ Here an exhaustive list of all the available templates grouped by type.
         </td>
     </tr>
     <tr>
-        <td>Vanilla</td>
-        <td>
-            <a href="https://github.com/orchy-mfe/orchy-vanilla-template">JavaScript</a>
-        </td>
-        <td>
-            <a href="https://github.com/orchy-mfe/orchy-vanilla-typescript-template">TypeScript</a>
-        </td>
-    </tr>
-    <tr>
         <td>Preact</td>
         <td>
             <a href="https://github.com/orchy-mfe/orchy-preact-js-template">JavaScript</a>
@@ -67,6 +64,15 @@ Here an exhaustive list of all the available templates grouped by type.
         </td>
         <td>
             <a href="https://github.com/orchy-mfe/orchy-solid-js-typescript-template">TypeScript</a>
+        </td>
+    </tr>
+    <tr>
+        <td>Vanilla</td>
+        <td>
+            <a href="https://github.com/orchy-mfe/orchy-vanilla-template">JavaScript</a>
+        </td>
+        <td>
+            <a href="https://github.com/orchy-mfe/orchy-vanilla-typescript-template">TypeScript</a>
         </td>
     </tr>
 </table>
