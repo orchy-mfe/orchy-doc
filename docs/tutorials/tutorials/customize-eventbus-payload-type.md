@@ -4,17 +4,18 @@ sidebar_position: 4
 
 # Customize eventBus payload type
 
-:::tip
-The first two operations are already done if you decide to use one of our [templates](../../templates/templates.md).
-:::
-
-For a TypeScript project, you can define the `ReplaySubject` payload using the `generic` provided by the `OrchyMicroFrontend` class.
-
-The file content should be equivalent to:
+For a TypeScript project, you can define the `ReplaySubject` payload type using the `generic` parameter provided by the `OrchyMicroFrontend` class as follow:
 
 ```javascript
-import OrchyBaseMfe from '@orchy-mfe/spa-adapter'
-export class ReactMfe extends OrchyBaseMfe<{kind: string}> {
+import OrchyMicroFrontend from '@orchy-mfe/spa-adapter'
 
+type PayloadType = {kind: string}
+
+export class ReactMfe extends OrchyMicroFrontend<PayloadType> {
+    async mount(microFrontendProperties: MicroFrontendProperties<PayloadType>) {
+    }
+
+    async mount(microFrontendProperties: MicroFrontendProperties<PayloadType>) {
+    }
 }
 ```
