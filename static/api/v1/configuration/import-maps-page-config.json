@@ -1,8 +1,0 @@
-{
-    "type": "flex-row",
-    "content": [{
-        "type": "micro-frontend",
-        "tag": "react-import-map",
-        "url": "/react-import-maps/index.js"
-    }]
-}
