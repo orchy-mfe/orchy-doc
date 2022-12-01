@@ -1,16 +1,16 @@
 {
   "microPages": {
     "/docs/examples/examples/communication/mfe-iframe": {
-      "pageConfiguration": "communication-mfe-iframe-page-config"
+      "pageConfiguration": "communication-mfe-iframe-page-config.html"
     },
     "/docs/examples/examples/communication/mfe-mfe": {
-      "pageConfiguration": "communication-mfe-mfe-page-config"
+      "pageConfiguration": "communication-mfe-mfe-page-config.json"
     },
     "/docs/examples/examples/import-maps": {
-      "pageConfiguration": "import-maps-page-config"
+      "pageConfiguration": "import-maps-page-config.json"
     },
     "/docs/examples/examples/routing": {
-      "pageConfiguration": "routing-config"
+      "pageConfiguration": "routing-config.json"
     }
   },
   "common": {

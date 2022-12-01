@@ -7,7 +7,7 @@ specifiers:
   '@docusaurus/types': ^2.2.0
   '@easyops-cn/docusaurus-search-local': ^0.33.6
   '@mdx-js/react': 1.6.22
-  '@orchy-mfe/web-component': ^0.2.0
+  '@orchy-mfe/web-component': ^0.3.0
   clsx: ^1.2.1
   cspell: ^6.15.1
   docusaurus-plugin-image-zoom: ^0.1.1
@@ -20,7 +20,7 @@ dependencies:
   '@docusaurus/preset-classic': 2.2.0_i7c3mzhadz6etr5vimnzwqrtiu
   '@easyops-cn/docusaurus-search-local': 0.33.6_ebpfzwhgjnmdg7fhnkogmmldra
   '@mdx-js/react': 1.6.22_react@17.0.2
-  '@orchy-mfe/web-component': 0.2.0
+  '@orchy-mfe/web-component': 0.3.0
   clsx: 1.2.1
   cspell: 6.15.1
   docusaurus-plugin-image-zoom: 0.1.1
@@ -2926,16 +2926,16 @@ packages:
       fastq: 1.13.0
     dev: false
 
-  /@orchy-mfe/page-builder/0.2.0:
-    resolution: {integrity: sha512-MdwYC+4nPA9rr7xatKjomjWEwojn9+mAbWpkhWUzPEJVmB/v2k+KWf9uPXBQ558KhkUapPU7LBjcqy900C+3Hw==}
+  /@orchy-mfe/page-builder/0.3.0:
+    resolution: {integrity: sha512-FKV95qeO6mZcTbVWwD8vdVe84LiY9A6gWz5CyKsbS4b4ixdzMjr/6gZlAwCVoh193ZBvacjFGm+Cq56PtNt4Gw==}
     dependencies:
       rxjs: 7.5.7
     dev: false
 
-  /@orchy-mfe/web-component/0.2.0:
-    resolution: {integrity: sha512-U/BhtjJD3XWWnbEaz4WS5O8IS3ti4EAFSDeJR0dI6COiblR/SdG6p0rpJrVxxLccqclB87tzfXY+oDDRahRUzA==}
+  /@orchy-mfe/web-component/0.3.0:
+    resolution: {integrity: sha512-ym9JQUN+qQ0WanP3b7PSTFdDoZzDN6352x9eOdvm2GAg1j0rp6omSusJePvjcxVZKUQvlQZ9CNSiaQLWeFtjhQ==}
     dependencies:
-      '@orchy-mfe/page-builder': 0.2.0
+      '@orchy-mfe/page-builder': 0.3.0
       es-module-shims: 1.6.2
       light-join: 1.3.0
       lit: 2.4.1
