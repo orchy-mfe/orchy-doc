@@ -1,50 +1,22 @@
 ---
-sidebar_position: 6
+sidebar_position: 5
 ---
 
 # Page configuration
 
-The `@orchy-mfe/page-builder` package is a library that allows us to do [Server Driven UI](https://www.judo.app/blog/server-driven-ui/), transforming a Page configuration `JSON` in a set of `HTMLElements` that can be appended in your DOM.
+The configuration of each page can be expressed throught a plain `HTML` file, or with a `JSON` object that must adhere to the [PageBuilder configuration standard](./page-builder/page-builder.md).
 
-Here is a full example of the configuration that we are going to explore in the next pages:
+You can use the `HTML` configuration to define the structure of your page, but to be correctly managed by `orchy` you **must** insert two attributes where needed:
 
-```json
-{
-  "type": "flex-column",
-  "attributes": {
-    "id": "root"
-  },
-  "content": [{
-    "type": "flex-row",
-    "properties": {
-      "name": "row-name"
-    },
-    "content": [{
-      "type": "element",
-      "tag": "div",
-      "properties": {
-        "complexObject": {"key": "value"}
-      }
-    }]
-  }, {
-    "type": "element",
-    "tag": "link",
-    "attributes": {
-      "rel": "stylesheet",
-      "href": "https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-    }
-  }]
-}
-```
+- `orchy-micro-frontend`: this attribute defines that the `DOM` element is a Micro Frontend that must be managed by `orchy`. This will be used to search for the elements in which `orchy` will inject the `microFrontendProperties`;
+- `orchy-element`: this attribute defines that the `DOM` element needs the `orchy's eventBus`. This will be used to search for the elements in which `orchy` will inject the `eventBus`.
 
-It produces the following output:
+Here is a full example of the configuration made with `HTML`:
+
 ```html
-<div>
-  <div style="display: flex; flex-direction: column" id="root">
-    <div style="display: flex; flex-direction: row">
-      <div></div>
-    </div>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
-  </div>
+<div style="display: flex; flex-direction: row">
+    <script type="module" src="/communication-react-mfe/index.js"></script>
+    <communication-react-mfe orchy-micro-frontend></communication-react-mfe>
+    <iframe src="/communication-svelte-iframe"></iframe>
 </div>
 ```

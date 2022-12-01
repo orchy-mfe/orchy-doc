@@ -14,7 +14,7 @@ So a key represents the path that `orchy` will handle to expose your desired Mic
 
 `pageConfiguration` is a **mandatory** field which specifies the configuration name that will be fetched to compose your page.
 
-This configuration can be expressed throught a plain `HTML` file, or with a `JSON` object that **must** adhere to the [PageBuilder configuration standard](../page-configuration/page-configuration.md).
+This configuration can be expressed throught a plain `HTML` file, or with a `JSON` object that **must** adhere to the [PageBuilder configuration standard](../page-configuration/page-builder/page-builder.md).
 
 :::info
 The `PageBuilder JSON` configuration is more powerful than the plain `HTML`, as it allows you to easily define the properties of each DOM element.
@@ -47,7 +47,7 @@ Additionally, will be fetched one Micro Frontend from `localhost:3000`, with `mi
 
 While injecting properties, `microPages.properties` has the least priority..
 
-This means that if a property is defined in both [`microPage.properties`](#micropagesproperties) and [`PageBuilder element property`](../page-configuration/common-page-configuration#properties), only the value in [`PageBuilder element property`](../page-configuration/common-page-configuration#properties) will be effectively injected.
+This means that if a property is defined in both [`microPage.properties`](#micropagesproperties) and [`PageBuilder element property`](../page-configuration/common-page-configuration#properties), only the value in [`PageBuilder element property`](../page-configuration/page-builder/common-page-configuration#properties) will be effectively injected.
 
 :::danger
 There are two properties reserved for specific `orchy` usage:
