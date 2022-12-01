@@ -4,26 +4,21 @@ sidebar_position: 4
 
 # microPages
 
-This field is an object which allows you to compose your page, and your Micro Frontends, grouping them by the exposition path.
+A `micro page` can be seen as a web page managed by `orchy`.  
 
-So, in this object, the key represents the path that `orchy` will handle to expose your desired Micro Frontends.
+This field is an object which allows you to compose your page content, and your Micro Frontends, grouping them by the exposition path.
+
+So a key represents the path that `orchy` will handle to expose your desired Micro Frontends.
 
 ## microPages.pageConfiguration
 
-`pageConfiguration` is an optional field which specifies the configuration name that will be fetched to compose your page.
+`pageConfiguration` is a **mandatory** field which specifies the configuration name that will be fetched to compose your page.
 
-The configuration content must adhere to the [PageBuilder configuration standard](../page-configuration/page-configuration.md).
+This configuration can be expressed throught a plain `HTML` file, or with a `JSON` object that **must** adhere to the [PageBuilder configuration standard](../page-configuration/page-configuration.md).
 
-If not defined, will be used the following as `pageConfiguration` content:
-```json
-{
-  "type": "element",
-  "tag": "div",
-  "attributes": {
-    "id": "defaultContainer"
-  }
-}
-```
+:::info
+The `PageBuilder JSON` configuration is more powerful than the plain `HTML`, as it allows you to easily define the properties of each DOM element.
+:::
 
 ## microPages.properties
 
@@ -50,9 +45,9 @@ Additionally, will be fetched one Micro Frontend from `localhost:3000`, with `mi
 
 ## Properties injection
 
-In properties injection, `microPages.microFrontend.properties` has more priority than `microPages.properties`.
+While injecting properties, `microPages.properties` has the least priority..
 
-This means that if a property is defined in both `microPage.properties` and `microPages.microFrontend.properties`, only the value in `microPages.microFrontend.properties` will be effectively injected.
+This means that if a property is defined in both [`microPage.properties`](#micropagesproperties) and [`PageBuilder element property`](../page-configuration/common-page-configuration#properties), only the value in [`PageBuilder element property`](../page-configuration/common-page-configuration#properties) will be effectively injected.
 
 :::danger
 There are two properties reserved for specific `orchy` usage:

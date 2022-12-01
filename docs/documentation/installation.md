@@ -21,6 +21,6 @@ To configure its behavior, the Web Component exposes two attributes:
 - `basePath`: the base path that will be used by the internal router to handle the Micro Frontends loading.  
   Its default value is the value of `window.location.pathname` when the Web Component is inserted in the page;
 - `configurationName`: the name of the configuration that will be fetched to orchestrate your pages and your Micro Frontends.  
-  Its default value is `orchy-config`. 
+  Its default value is `orchy-config.json`. 
   
 In the [next section](./wc-configuration/wc-configuration.md), we will do a deep dive in the configuration content structure.
