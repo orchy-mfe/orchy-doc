@@ -7,7 +7,7 @@
       "pageConfiguration": "communication-mfe-mfe-page-config.json"
     },
     "/docs/examples/examples/import-maps": {
-      "pageConfiguration": "import-maps-page-config.html"
+      "pageConfiguration": "import-maps-page-config.json"
     },
     "/docs/examples/examples/routing": {
       "pageConfiguration": "routing-config.json"
