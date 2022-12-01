@@ -105,7 +105,7 @@ export class ReactMfe extends OrchyMicroFrontend {
 customElements.define('react-mfe', ReactMfe)
 ```
 
-Here we are defining the `ReactMfe` class, and associating it to the `react-mfe` custom element tag, which is the one that will be configured in the [`micro-frontend` page configuration type](../../documentation/page-configuration/configuration-by-type#micro-frontend).
+Here we are defining the `ReactMfe` class, and associating it to the `react-mfe` custom element tag, which is the one that will be configured in the [`micro-frontend` page configuration type](../../documentation/page-configuration/page-builder/configuration-by-type#micro-frontend).
 
 The `mount` method will bootstraps your application, while the `unmount` method will tear down it.
 Under the hood, the `OrchyMicroFrontend` class will manage the most common part of the lifecycle for you.

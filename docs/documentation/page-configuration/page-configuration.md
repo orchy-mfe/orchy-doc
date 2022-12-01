@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # Page configuration
 
-The configuration of each page can be expressed throught a plain `HTML` file, or with a `JSON` object that must adhere to the [PageBuilder configuration standard](./page-builder/page-builder.md).
+The configuration of each page can be expressed through a plain `HTML` file, or with a `JSON` object that must adhere to the [PageBuilder configuration standard](./page-builder/page-builder.md).
 
 You can use the `HTML` configuration to define the structure of your page, but to be correctly managed by `orchy` you **must** insert two attributes where needed:
 
