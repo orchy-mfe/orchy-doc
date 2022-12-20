@@ -11,6 +11,9 @@
     },
     "/docs/examples/examples/routing": {
       "pageConfiguration": "routing-config.json"
+    },
+    "/docs/examples/examples/all-templates": {
+      "pageConfiguration": "all-templates-page-config.html"
     }
   },
   "common": {
