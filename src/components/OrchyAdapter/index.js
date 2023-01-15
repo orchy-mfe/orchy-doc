@@ -1,13 +1,13 @@
-import React from 'react'
-import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment'
+import BrowserOnly from '@docusaurus/BrowserOnly';
+import React from 'react';
 
 const OrchyAdapter = () => {
-    if(ExecutionEnvironment.canUseDOM) {
-        import('@orchy-mfe/web-component')
-        return <orchy-wc basePath="/" />
-    }
-
-    return null
+    return <BrowserOnly>
+        {() => {
+            import('@orchy-mfe/web-component')
+            return <orchy-wc basePath="/" />
+        }}
+    </BrowserOnly>
 }
 
 export default OrchyAdapter
