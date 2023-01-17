@@ -14,6 +14,9 @@
     },
     "/docs/examples/examples/all-templates": {
       "pageConfiguration": "all-templates-page-config.html"
+    },
+    "/docs/examples/examples/communication/parent-children": {
+      "pageConfiguration": "communication-parent-children-page-config.json"
     }
   },
   "common": {
