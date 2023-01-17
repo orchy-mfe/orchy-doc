@@ -1,14 +1,24 @@
 {
     "type": "flex-column",
-    "content": [{
-        "type": "micro-frontend",
-        "tag": "communication-mfe-mfe-react",
-        "url": "/communication-counter-react-mfe/index.js"
-    }, {
-        "type": "element",
-        "tag": "orchy-wc",
-        "attributes": {
-            "configurationName": "orchy-config-communication-parent-children.json"
+    "content": [
+        {
+            "type": "element",
+            "tag": "span",
+            "attributes": {
+                "innerHTML": "Parent"
+            }
+        },
+        {
+            "type": "micro-frontend",
+            "tag": "communication-mfe-mfe-react",
+            "url": "/communication-counter-react-mfe/index.js"
+        },
+        {
+            "type": "element",
+            "tag": "orchy-wc",
+            "attributes": {
+                "configurationName": "orchy-config-communication-parent-children.json"
+            }
         }
-    }]
+    ]
 }
