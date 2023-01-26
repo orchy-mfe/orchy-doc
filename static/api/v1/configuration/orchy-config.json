@@ -17,6 +17,9 @@
     },
     "/docs/examples/examples/communication/parent-children": {
       "pageConfiguration": "communication-parent-children-page-config.json"
+    },
+    "/docs/examples/examples/storage": {
+      "pageConfiguration": "storage-config.html"
     }
   },
   "common": {
