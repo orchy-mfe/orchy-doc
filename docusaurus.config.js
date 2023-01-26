@@ -72,6 +72,12 @@ const config = {
           },
           {
             type: 'doc',
+            docId: 'plugins/plugins',
+            position: 'left',
+            label: 'Plugins',
+          },
+          {
+            type: 'doc',
             docId: 'tutorials/tutorials/tutorials',
             position: 'left',
             label: 'Tutorials',
