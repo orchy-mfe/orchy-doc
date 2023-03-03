@@ -6,7 +6,7 @@
             "tag": "orchy-next-plugin",
             "url": "https://unpkg.com/@orchy-mfe/next-plugin@0.1.2/dist/orchy-next-plugin.js",
             "attributes": {
-                "nextBase": "https://orchy-mfe.github.io/next-js/"
+                "nextBase": "/next-js/"
             }
         }
     ]
