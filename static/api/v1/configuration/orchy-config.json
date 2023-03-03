@@ -18,8 +18,11 @@
     "/docs/examples/examples/communication/parent-children": {
       "pageConfiguration": "communication-parent-children-page-config.json"
     },
-    "/docs/examples/examples/storage": {
+    "/docs/examples/examples/plugins/storage": {
       "pageConfiguration": "storage-config.html"
+    },
+    "/docs/examples/examples/plugins/next-js": {
+      "pageConfiguration": "next-page-config.json"
     }
   },
   "common": {
