@@ -15,8 +15,8 @@ importers:
         specifier: 3.5.1
         version: 3.5.1(@algolia/client-search@4.24.0)(@types/react@18.3.3)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(search-insights@2.14.0)(typescript@5.5.2)
       '@easyops-cn/docusaurus-search-local':
-        specifier: ^0.46.1
-        version: 0.46.1(@docusaurus/theme-common@3.5.1(@docusaurus/plugin-content-docs@3.5.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.5.2))(@docusaurus/types@3.5.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.5.2))(@docusaurus/types@3.5.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.5.2)
+        specifier: ^0.47.0
+        version: 0.47.0(@docusaurus/theme-common@3.5.1(@docusaurus/plugin-content-docs@3.5.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.5.2))(@docusaurus/types@3.5.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.5.2))(@docusaurus/types@3.5.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.5.2)
       '@mdx-js/react':
         specifier: 3.1.0
         version: 3.1.0(@types/react@18.3.3)(react@19.0.0)
@@ -1165,13 +1165,13 @@ packages:
   '@easyops-cn/autocomplete.js@0.38.1':
     resolution: {integrity: sha512-drg76jS6syilOUmVNkyo1c7ZEBPcPuK+aJA7AksM5ZIIbV57DMHCywiCr+uHyv8BE5jUTU98j/H7gVrkHrWW3Q==}
 
-  '@easyops-cn/docusaurus-search-local@0.46.1':
-    resolution: {integrity: sha512-kgenn5+pctVlJg8s1FOAm9KuZLRZvkBTMMGJvTTcvNTmnFIHVVYzYfA2Eg+yVefzsC8/cSZGKKJ0kLf8I+mQyw==}
+  '@easyops-cn/docusaurus-search-local@0.47.0':
+    resolution: {integrity: sha512-nzOeVWR2T34Czdjby85VHP0a2AmfE/El56MoXDs3UDOOTCtba+2FVxYDcNMohoGFvfesX6fGsZ3vZuYT4aSqXw==}
     engines: {node: '>=12'}
     peerDependencies:
       '@docusaurus/theme-common': ^2 || ^3
-      react: ^16.14.0 || ^17 || ^18
-      react-dom: ^16.14.0 || 17 || ^18
+      react: ^16.14.0 || ^17 || ^18 || ^19
+      react-dom: ^16.14.0 || 17 || ^18 || ^19
 
   '@emnapi/core@1.2.0':
     resolution: {integrity: sha512-E7Vgw78I93we4ZWdYCb4DGAwRROGkMIXk7/y87UmANR+J6qsWusmC3gLt0H+O0KOt5e6O38U8oJamgbudrES/w==}
@@ -2001,10 +2001,6 @@ packages:
 
   clone-deep@4.0.1:
     resolution: {integrity: sha512-neHB9xuzh/wk0dIHweyAXv2aPGZIVk3pLMe+/RNzINf17fe0OG96QroktYAUm7SM1PBnzTabaLboqqxDyMU+SQ==}
-    engines: {node: '>=6'}
-
-  clsx@1.2.1:
-    resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
     engines: {node: '>=6'}
 
   clsx@2.1.1:
@@ -6956,7 +6952,7 @@ snapshots:
       cssesc: 3.0.0
       immediate: 3.3.0
 
-  '@easyops-cn/docusaurus-search-local@0.46.1(@docusaurus/theme-common@3.5.1(@docusaurus/plugin-content-docs@3.5.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.5.2))(@docusaurus/types@3.5.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.5.2))(@docusaurus/types@3.5.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.5.2)':
+  '@easyops-cn/docusaurus-search-local@0.47.0(@docusaurus/theme-common@3.5.1(@docusaurus/plugin-content-docs@3.5.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.5.2))(@docusaurus/types@3.5.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.5.2))(@docusaurus/types@3.5.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.5.2)':
     dependencies:
       '@docusaurus/plugin-content-docs': 3.5.1(debug@4.3.5)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.5.2)
       '@docusaurus/theme-common': 3.5.1(@docusaurus/plugin-content-docs@3.5.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.5.2))(@docusaurus/types@3.5.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.5.2)
@@ -6967,7 +6963,7 @@ snapshots:
       '@easyops-cn/autocomplete.js': 0.38.1
       '@node-rs/jieba': 1.10.3
       cheerio: 1.0.0
-      clsx: 1.2.1
+      clsx: 2.1.1
       comlink: 4.4.2
       debug: 4.3.5
       fs-extra: 10.1.0
@@ -7971,8 +7967,6 @@ snapshots:
       is-plain-object: 2.0.4
       kind-of: 6.0.3
       shallow-clone: 3.0.1
-
-  clsx@1.2.1: {}
 
   clsx@2.1.1: {}
 
