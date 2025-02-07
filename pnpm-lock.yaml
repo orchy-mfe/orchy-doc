@@ -30,8 +30,8 @@ importers:
         specifier: ^8.17.3
         version: 8.17.3
       docusaurus-plugin-image-zoom:
-        specifier: ^2.0.0
-        version: 2.0.0(@docusaurus/theme-classic@3.5.1(@types/react@18.3.3)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.5.2))
+        specifier: ^3.0.0
+        version: 3.0.0(@docusaurus/theme-classic@3.5.1(@types/react@18.3.3)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.5.2))
       prism-react-renderer:
         specifier: ^2.4.1
         version: 2.4.1(react@19.0.0)
@@ -2404,8 +2404,8 @@ packages:
     resolution: {integrity: sha512-l4gcSouhcgIKRvyy99RNVOgxXiicE+2jZoNmaNmZ6JXiGajBOJAesk1OBlJuM5k2c+eudGdLxDqXuPCKIj6kpw==}
     engines: {node: '>=6'}
 
-  docusaurus-plugin-image-zoom@2.0.0:
-    resolution: {integrity: sha512-TWHQZeoiged+95CESlZk++lihzl3pqw34n0/fbexx2AocmFhbo9K2scYDgYB8amki4/X6mUCLTPZE1pQvT+00Q==}
+  docusaurus-plugin-image-zoom@3.0.0:
+    resolution: {integrity: sha512-9ouLF2if1sPVdEz3BO2qkf4WaJqaYfXCE78tLAIiCwXwLGYXc5wuQAUWINtp0gsEl0mUOeYAZpH8JKL4mC3m6w==}
     peerDependencies:
       '@docusaurus/theme-classic': '>=3.0.0'
 
@@ -8433,7 +8433,7 @@ snapshots:
     dependencies:
       '@leichtgewicht/ip-codec': 2.0.5
 
-  docusaurus-plugin-image-zoom@2.0.0(@docusaurus/theme-classic@3.5.1(@types/react@18.3.3)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.5.2)):
+  docusaurus-plugin-image-zoom@3.0.0(@docusaurus/theme-classic@3.5.1(@types/react@18.3.3)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.5.2)):
     dependencies:
       '@docusaurus/theme-classic': 3.5.1(@types/react@18.3.3)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.5.2)
       medium-zoom: 1.1.0
