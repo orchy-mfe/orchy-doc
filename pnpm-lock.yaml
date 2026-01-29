@@ -15,8 +15,8 @@ importers:
         specifier: 3.5.1
         version: 3.5.1(@algolia/client-search@4.24.0)(@types/react@18.3.3)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(search-insights@2.14.0)(typescript@5.5.2)
       '@easyops-cn/docusaurus-search-local':
-        specifier: ^0.52.2
-        version: 0.52.2(@docusaurus/theme-common@3.5.1(@docusaurus/plugin-content-docs@3.5.1(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.5.2))(@docusaurus/types@3.5.1(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.5.2))(@docusaurus/types@3.5.1(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.5.2)
+        specifier: ^0.52.3
+        version: 0.52.3(@docusaurus/theme-common@3.5.1(@docusaurus/plugin-content-docs@3.5.1(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.5.2))(@docusaurus/types@3.5.1(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.5.2))(@docusaurus/types@3.5.1(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.5.2)
       '@mdx-js/react':
         specifier: 3.1.1
         version: 3.1.1(@types/react@18.3.3)(react@19.2.4)
@@ -1171,8 +1171,8 @@ packages:
   '@easyops-cn/autocomplete.js@0.38.1':
     resolution: {integrity: sha512-drg76jS6syilOUmVNkyo1c7ZEBPcPuK+aJA7AksM5ZIIbV57DMHCywiCr+uHyv8BE5jUTU98j/H7gVrkHrWW3Q==}
 
-  '@easyops-cn/docusaurus-search-local@0.52.2':
-    resolution: {integrity: sha512-oEHkHe/OWHFcJxOhicS5UqohDOyPieREH+oNoImL/VcdrPzDxT2LB5Scov6WMOpOyDcSMJ6QCvjj63PEhhU8Nw==}
+  '@easyops-cn/docusaurus-search-local@0.52.3':
+    resolution: {integrity: sha512-bkKHD+FoAY+sBvd9vcHudx8X5JQXkyGBcpstpJwOUTTpKwT0rOtUtnfmizpMu113LqdHxOxvlekYkGeTNGYYvw==}
     engines: {node: '>=12'}
     peerDependencies:
       '@docusaurus/theme-common': ^2 || ^3
@@ -3615,10 +3615,6 @@ packages:
 
   micromark@4.0.0:
     resolution: {integrity: sha512-o/sd0nMof8kYff+TqcDx3VSrgBTcZpSvYcAHIfHhv5VAuNmisCxjhx6YmxS8PFEpb9z5WKWKPdzf0jM23ro3RQ==}
-
-  micromatch@4.0.7:
-    resolution: {integrity: sha512-LPP/3KorzCwBxfeUuZmaR6bG2kdeHSbe0P2tY3FLRU4vYrjYz5hI4QZwV0njUx3jeuKe67YukQ1LSPZBKDqO/Q==}
-    engines: {node: '>=8.6'}
 
   micromatch@4.0.8:
     resolution: {integrity: sha512-PXwfBhYu0hBCPw8Dn0E+WDYb7af3dSLVWKi3HGv84IdF4TyFoC0ysxFd0Goxw7nSv4T/PzEJQxsYsEiFCKo2BA==}
@@ -6954,7 +6950,7 @@ snapshots:
       jiti: 1.21.6
       js-yaml: 4.1.0
       lodash: 4.17.21
-      micromatch: 4.0.7
+      micromatch: 4.0.8
       prompts: 2.4.2
       resolve-pathname: 3.0.0
       shelljs: 0.8.5
@@ -6977,7 +6973,7 @@ snapshots:
       cssesc: 3.0.0
       immediate: 3.3.0
 
-  '@easyops-cn/docusaurus-search-local@0.52.2(@docusaurus/theme-common@3.5.1(@docusaurus/plugin-content-docs@3.5.1(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.5.2))(@docusaurus/types@3.5.1(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.5.2))(@docusaurus/types@3.5.1(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.5.2)':
+  '@easyops-cn/docusaurus-search-local@0.52.3(@docusaurus/theme-common@3.5.1(@docusaurus/plugin-content-docs@3.5.1(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.5.2))(@docusaurus/types@3.5.1(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.5.2))(@docusaurus/types@3.5.1(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.5.2)':
     dependencies:
       '@docusaurus/plugin-content-docs': 3.5.1(debug@4.3.5)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.5.2)
       '@docusaurus/theme-common': 3.5.1(@docusaurus/plugin-content-docs@3.5.1(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.5.2))(@docusaurus/types@3.5.1(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.5.2)
@@ -9153,7 +9149,7 @@ snapshots:
       http-proxy: 1.18.1(debug@4.3.5)
       is-glob: 4.0.3
       is-plain-obj: 3.0.0
-      micromatch: 4.0.7
+      micromatch: 4.0.8
     optionalDependencies:
       '@types/express': 4.17.21
     transitivePeerDependencies:
@@ -9999,11 +9995,6 @@ snapshots:
       micromark-util-types: 2.0.0
     transitivePeerDependencies:
       - supports-color
-
-  micromatch@4.0.7:
-    dependencies:
-      braces: 3.0.3
-      picomatch: 2.3.1
 
   micromatch@4.0.8:
     dependencies:
